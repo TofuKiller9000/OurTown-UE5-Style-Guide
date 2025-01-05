@@ -311,6 +311,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Texture                 | T_         |          | See [Textures](#anc-textures)    |
 | Particle System         | PS_        |            |                                  |
 | Widget Blueprint        | WBP_       |            |                                  |
+| Background Art          | BG_        |            |                                  |
 
 <a name="anc-animations"></a>
 <a name="1.2.2"></a>
