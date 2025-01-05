@@ -747,6 +747,8 @@ If you find that the content browser has an empty folder you can't delete, you s
 1. Ensure the folder is now gone.
 1. Submit changes to source control.
 
+Unfamiliar with redirectors or how to Fix them? Watch this [video](https://drive.google.com/file/d/113kMipx3swbFrrcXqFm9u7l5njVF2KFL/view?usp=drive_link)
+
 **[⬆ Back to Top](#table-of-contents)**
 
 
