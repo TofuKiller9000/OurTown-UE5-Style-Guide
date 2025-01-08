@@ -519,52 +519,80 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
 |-- Content
     |-- <a href="#2.2">OurTown</a>
         |-- Art
-        |   |-- Industrial
+        |   |-- BGExteriorLocation
         |   |   |-- Ambient
         |   |   |-- Machinery
         |   |   |-- Pipes
-        |   |-- Nature
-        |   |   |-- Ambient
-        |   |   |-- Foliage
-        |   |   |-- Rocks
-        |   |   |-- Trees
-        |   |-- Office
+        |   |-- BGInteriorLocation
+        |   |   |-- Bank
+        |   |   |-- BookClub
+        |   |   |-- CornerStore
+        |   |   |-- Diner
+        |   |   |-- DoctorOffice
+        |   |   |-- Library
+        |   |   |-- PostOffice
+        |   |   |-- TownHall
+        |   |   |-- Home
+        |   |-- Evidence
+        |   |-- CharacterPortraits
+        |   |   |-- AgnesEaves
+        |   |   |-- DonavanBrown
+        |   |   |-- EllieFletcher
+        |   |   |-- Evelyn
+        |   |   |-- HaroldMiller
+        |   |   |-- LucienVogit
+        |   |   |-- MartinJenkins
+        |   |   |-- Dog
+        |   |   |-- SusanJones
+        |   |   |-- TheGoobers
+        |   |   |-- TheWalkers
+        |   |-- Interface
+        |   |   Newspaper
         |-- Characters
-        |   |-- Bob
         |   |-- Common
         |   |   |-- <a href="#2.7">Animations</a>
         |   |   |-- Audio
-        |   |-- Harold
-        |   |-- Eliza
-        |   |-- <a href="#2.1.3">Zoe</a>
+        |   |-- AgnesEaves
+        |   |-- DonavanBrown
+        |   |-- EllieFletcher
+        |   |-- Evelyn
+        |   |-- HaroldMiller
+        |   |-- LucienVogit
+        |   |-- MartinJenkins
+        |   |-- Dog
+        |   |-- SusanJones
+        |   |-- TheGoobers
+        |   |-- TheWalkers
         |-- <a href="#2.5">Core</a>
         |   |-- Characters
+        |   |-- Player
         |   |-- Engine
         |   |-- <a href="#2.1.2">GameModes</a>
         |   |-- Interactables
-        |   |-- Pickups
-        |   |-- Weapons
+        |   |-- DialogueSystem
+	|   |-- | -- SUDs
+	|   |-- | -- | -- DialogueText
+        |   |-- EvidenceSystem
+        |   |-- NewspaperSystem
+        |   |-- ScoopSystem
+        |   |-- StovetopStories
         |-- Effects
         |   |-- Electrical
         |   |-- Fire
         |   |-- Weather
         |-- <a href="#2.4">Maps</a>
-        |   |-- Campaign1
-        |   |-- Campaign2
+        |   |-- Demo
+        |   |-- Main
         |-- <a href="#2.8">MaterialLibrary</a>
         |   |-- Debug
         |   |-- Metal
         |   |-- Paint
         |   |-- Utility
         |   |-- Weathering
-        |-- Placeables
-        |   |-- Pickups
-        |-- Weapons
-            |-- Common
-            |-- Pistols
-            |   |-- DesertEagle
-            |   |-- RocketPistol
-            |-- Rifles
+        |-- Movies
+        |   |-- Ending
+        |   |-- Stakeout
+
 </pre>
 
 The reasons for this structure are listed in the following sub-sections.
