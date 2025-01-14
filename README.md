@@ -124,6 +124,9 @@ Based upon [Gamemakin](https://gamemak.in/) UE5 Style Guide.
   - [7.2 Texture Density Should Be Uniform](#textures-density)
   - [7.3 Textures Should Be No Bigger than 8192](#textures-max-size)
   - [7.4 Textures Should Be Grouped Correctly](#textures-group)
+- [8. Scrum](#scrum)
+  - [8.1 Scrum Glossary](#scrum-glossary)
+  - [8.1.1 An Important Point Regarding Storypoints](#storypoint-point)
 
 ## Important Terminology
 
@@ -255,9 +258,9 @@ Keeping the pattern `Prefix_BaseAssetName_Variant_Suffix` and in mind and using 
 
 `Prefix` and `Suffix` are to be determined by the asset type through the following [Asset Name Modifier](#asset-name-modifiers) tables.
 
-`BaseAssetName` should be determined by a short and easily recognizable name related to the context of this group of assets. For example, if you had a character named Bob, all of Bob's assets would have the `BaseAssetName` of `Bob`.
+`BaseAssetName` should be determined by a short and easily recognizable name related to the context of this group of assets. For example, if you had a character named Donovan, all of Donovan's assets would have the `BaseAssetName` of `Donovan`.
 
-For unique and specific variations of assets, `Variant` is either a short and easily recognizable name that represents logical grouping of assets that are a subset of an asset's base name. For example, if Bob had multiple skins these skins should still use `Bob` as the `BaseAssetName` but include a recognizable `Variant`. An 'Evil' skin would be referred to as `Bob_Evil` and a 'Retro' skin would be referred to as `Bob_Retro`.
+For unique and specific variations of assets, `Variant` is either a short and easily recognizable name that represents logical grouping of assets that are a subset of an asset's base name. For example, if Donovan had multiple skins these skins should still use `Donovan` as the `BaseAssetName` but include a recognizable `Variant`. An 'Evil' skin would be referred to as `Donovan_Evil` and a 'Retro' skin would be referred to as `Donovan_Retro`.
 
 For unique but generic variations of assets, `Variant` is a two digit number starting at `01`. For example, if you have an environment artist generating nondescript rocks, they would be named `Rock_01`, `Rock_02`, `Rock_03`, etc. Except for rare exceptions, you should never require a three digit variant number. If you have more than 100 assets, you should consider organizing them with different base names or using multiple variant names.
 
@@ -266,15 +269,15 @@ Depending on how your asset variants are made, you can chain together variant na
 <a name="1.1-examples"></a>
 #### 1.1 Examples
 
-##### 1.1e1 Bob
+##### 1.1e1 Donovan
 
 | Asset Type              | Asset Name                                                 |
 | ----------------------- | ---------------------------------------------------------- |
-| Skeletal Mesh           | SK_Bob                                                     |
-| Material                | M_Bob                                                      |
-| Texture (Diffuse/Albedo)| T_Bob_D                                                    |
-| Texture (Normal)        | T_Bob_N                                                    |
-| Texture (Evil Diffuse)  | T_Bob_Evil_D                                               |
+| Skeletal Mesh           | SK_Donovan                                                     |
+| Material                | M_Donovan                                                      |
+| Texture (Diffuse/Albedo)| T_Donovan_D                                                    |
+| Texture (Normal)        | T_Donovan_N                                                    |
+| Texture (Evil Diffuse)  | T_Donovan_Evil_D                                               |
 
 ##### 1.1e2 Rocks
 
@@ -1428,6 +1431,53 @@ No texture should have a dimension that exceeds 8192 in size, unless you have a 
 ### 7.4 Textures Should Be Grouped Correctly
 
 Every texture has a Texture Group property used for LODing, and this should be set correctly based on its use. For example, all UI textures should belong in the UI texture group.
+
+<a name="8"></a>
+<a name="scrum"></a>
+## 8. Scrum
+
+Scrum is an [Agile](https://asana.com/resources/agile-methodology) methodology designed to help teams structure their work and manage workflow for an iterative product. It is most commonly used in software development and will be the framework used for this project. It is expected that you have a basic understanding of what Scrum is, but if you are unfamiliar or just need a refresher, check out [Atlassian's Guide to Scrum](https://www.atlassian.com/agile/scrum) to learn more.
+
+<a name="8.1"></a>
+<a name="scrum-glossary"></a>
+### 8.1 Scrum Glossary
+Below is a glossary of keywords to know regarding scrum: 
+
+> ###### Backlog
+>
+> A prioritized list of tasks that still need to be done by the team within a set sprint.
+> 
+> ###### Scrum Master
+>
+> A designated person who facilitates the scrum framework to the entire team, making sure the rules and roles of scrum are followed. 
+>
+> ###### Sprint
+>
+> A short, time-boxed period when a scrum team works to complete a set amount of tasks
+>
+> ###### Storypoint
+>
+> A unit of measurement for expressing the estimated amount of overall effort a task is going to take to be fully implemented. In some scrum teams, storypoints are used as a representation of time, while others avoid using time as a metric. 
+> This project utilizes storypoints as a conversion of time. Please use the table below while assigning storypoints to a task:
+>
+> | Storypoint              | Time (Hours)   |
+> | ----------------------- | ---------------|
+> | 1                       | 1 - 2          |
+> | 2                       | 2 - 4          |
+> | 3      		    | 4 - 8          |
+> | 4                       | 8 - 16         |
+> | 5                       | 16 - 32 [*](#storypoint-point)      |
+> | 6                       | 32 - 64 [*](#storypoint-point)    |
+>
+> Example Scenario:
+> > Harold has been tasked with implementing a new type of checkmark button that integrates into the existing systems and is customizable for front-end developers. The scrum master talks with Harold, and both agree that it will take Harold a minimum of 4 hours to fully implement the button and complete testing, but not more than 6. The scrum master and Harold both agree to a storypoint value of 3. Ellie has been tasked with proofreading dialogue for Day 2 Evening Side Events. Both Ellie and the scrum master meet and agree that it would take her at max 2 hours to complete this task, so her task is assigned a storypoint value of 1. 
+
+<a name="8.1.1"></a>
+<a name="storypoint-point"></a>
+### 8.1.1 An Important Point Regarding Storypoints
+
+Tasks that are assigned with storypoints 5 or above need to be evaluated, approved, and manually signed off in a comment by the scrum master. These tasks are typically too arduous and large for a single person to complete, and should, most likely, be divided up into smaller tasks that can be completed in a shorter amount of time. 
+
 
 **[⬆ Back to Top](#table-of-contents)**
 
