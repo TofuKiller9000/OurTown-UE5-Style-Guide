@@ -483,6 +483,7 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Sound Cue               | A_         | _Cue       |                                  |
 | Sound Mix               | Mix_       |            |                                  |
 | Sound Wave              | A_         |            |                                  |
+| MetaSound Source              | A_         | _MS        |                                  |
 
 <a name="anc-ui"></a>
 <a name="1.2.11"></a>
